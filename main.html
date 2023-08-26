@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <header>
+        <img src="https://images.unsplash.com/photo-1546512565-39d4dc75e556?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJveXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Your Name" role="img">
+        <h1 role="heading">Raju</h1>
+    </header>
+
+    <section id="about" role="region">
+        <h2 role="heading">About Me</h2>
+        <p>Write a brief description about yourself here.</p>
+    </section>
+
+    <section id="projects" role="region">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1 - web development</li>
+            <li role="listitem">Project 2 - suporter</li>
+            <li role="listitem">Project 3 - analist</li>
+        </ul>
+    </section>
+
+    <section id="contact" role="region">
+        <h2 role="heading">Contact</h2>
+        <p>You can reach me at <a href="mailto:pgraju3l4@gmail.com">you@example.com</a>.</p>
+    </section>
 </body>
-
 </html>
